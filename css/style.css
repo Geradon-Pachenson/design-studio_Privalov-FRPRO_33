@@ -372,6 +372,7 @@ a, button {
 .online-control__text p {
     max-width: 681px;
     max-height: 130.911px;
+    padding-bottom: 62.25px;
     flex-shrink: 0;
     color: #363636;
     text-align: center;
@@ -394,22 +395,52 @@ a, button {
 .online-control__data-input {
     display: flex;
     flex-wrap: wrap;
+    gap: 49px;
     max-width: 769px;
+    max-height: 51px;
 }
 
 .online-control__btn {
     min-width: 200px;
     min-height: 51px;
     flex-shrink: 0;
+    border: #E3B873;
 }
 
-.online-control__form {
+.online-control__label {
     display: flex;
     flex-direction: column;
+    gap: 6.97px;
     max-width: 231px;
-    min-height: 45px;
+    color: #363636;
+    line-height: 163.68%; /* 22.915px */
+}
+
+.online-control__label span {
+    max-height: 12px;
+    color: rgba(54, 54, 54, 0.50);
+    font-size: 13px;
+    line-height: 163.68%; /* 21.278px */
+    transform: rotate(-0.068deg);
     flex-shrink: 0;
 }
+
+.online-control__label input {
+    max-height: 17px;
+    border: none;
+    color: #363636;
+    font-size: 14px;
+    line-height: 163.68%; /* 21.278px */
+    flex-shrink: 0;
+}
+.online-control__data-checkbox {
+    display: flex;
+    justify-content: center;
+    padding-top: 6.03px;
+}
+
+
+
 
 
 
