@@ -38,7 +38,7 @@
                 <div class="header__phone">
                     <a href="tel:+79287683239">+7 (928) 768-32-39</a>
                 </div>
-                <button type="button" class="header__button">
+                <button type="button" class="button">
                     REQUEST A CALL
                 </button>
             </div>
@@ -53,10 +53,10 @@
                         <p>Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
                     </div>
                     <div class="main__presentation-btn-container">
-                        <button type="button" class="main__presentation-btn-one">
+                        <button type="button" class="main__presentation-btn-one button">
                             CALCULATE THE COST
                         </button>
-                        <button type="button" class="main__presentation-btn-two">
+                        <button type="button" class="main__presentation-btn-two button">
                             SUBMIT YOUR APPLICATION
                         </button>
                     </div>
@@ -102,10 +102,36 @@
                             </li>
                         </ul>
                         <img class="projects-picture-img" src="images/jpeg/two-chairs.jpg" alt="Два стула у окна" >
-
                     </div>
                 </div>
-            </section>    
+            </section>   
+            <section class="main__online-control online-control">
+                <div class="online-control__wrap">
+                    <img class="online-control__camera-img" src="images/jpeg/online_camera.jpg" at="Видеокамера">
+                    <img class="online-control__picture-img" src="images/jpeg/online__control.jpg" at="Видеоконтроль ремонта помещения">
+                    <hr class="online-control__dividing-line">
+                    <div class="online-control__text">
+                        <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.</p>
+                    </div>
+                    <div class="online-control__data-input">
+                        <form class="online-control__form">
+                            <label for="name">Name
+                                <input type="text" id="name" placeholder="What is your name:">
+                            </label>
+                        </form>
+                        <form class="online-control__form">
+                            <label for="name">Phone
+                                <input type="text" id="name" placeholder="Your phone number:">
+                            </label>
+                        </form>
+                        <button type="button" class="online-control__btn button">
+                            Submit
+                        </button>
+                        <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
+                        I agree to the processing of <a href="ссылка на страницу согласия">personal data.</a>
+                    </div>
+                </div>
+            </section> 
             <div class="page__container">
             </div>
         </main>

@@ -91,7 +91,7 @@ a, button {
     color: #E3B873;
 }
 
-.header__button {
+.button {
     display: inline-flex;
     padding: 13px 33px;
     justify-content: center;
@@ -227,24 +227,9 @@ a, button {
 
 .main__presentation-btn-one,
 .main__presentation-btn-two {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
     min-width: 207px;
     min-height: 51px;
-    flex-shrink: 0;
-    margin-top: 1px;
-    border-radius: 2px;
-    background: #E3B873;
-    border-radius: 2px;
     box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.30);
-    color: #FFFFFF;
-    font-family: "NunitoSans-Italic", sans-serif;
-    font-style: italic;
-    font-size: 11px;
-    line-height: normal;
-    text-transform: uppercase;
 }
 
 .main__presentation-btn-two {
@@ -355,6 +340,79 @@ a, button {
     border-bottom: 1px solid #E3B873;
     padding-bottom: 6.68px;
 }
+
+.online-control {
+    display: flex;
+    margin-top: -324px;
+    min-height: 955px;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.online-control__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1256px;
+    gap: 31.21px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.online-control__dividing-line {
+    margin: 30.218px 0 3.25px 0;
+    width: 55px;
+    height: 1.543px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #E3B873;
+}
+
+.online-control__text p {
+    max-width: 681px;
+    max-height: 130.911px;
+    flex-shrink: 0;
+    color: #363636;
+    text-align: center;
+    font-size: 18px;
+    line-height: 204.6%; /* 36.828px */
+}
+
+.online-control__camera-img {
+    max-width: 196px;
+    max-height: 66.792px;
+    flex-shrink: 0;
+}
+
+.online-control__picture-img {
+    max-width: 817px;
+    max-height: 434px;
+    flex-shrink: 0;
+}
+
+.online-control__data-input {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 769px;
+}
+
+.online-control__btn {
+    min-width: 200px;
+    min-height: 51px;
+    flex-shrink: 0;
+}
+
+.online-control__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 231px;
+    min-height: 45px;
+    flex-shrink: 0;
+}
+
+
+
 
 
 
@@ -2428,827 +2486,3 @@ p.item-four__price {
 }
 
 /*---------------------------------------- Адаптив---------------------------------------------- */
-
-@media screen and (max-width: 1439px) {
-    body {
-        background-image: none;
-    }
-    .aside__img-blotbig,
-    .infoblock-two__tagspanel,
-    .responds-problem,
-    .responds-problem__img-one,
-    .responds-problem__img-three {
-        display: none;
-    }
-    .main__page-wrap {
-        padding: 54px 0px 71px 0px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .page-two__author-date>span:nth-child(n+4) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1203px) {
-    .item-one__wrap-box {
-        min-height: 145px;
-        min-width: 81.532%;
-        background-image: url(../images/png/1024px/family_1024.png);
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .cardssecond__body {
-        min-height: 253px;
-    }
-    .cardssecond__body {
-        padding: 16px 14px 16px 14px;
-    }
-    .cardsfist__image-one {
-        background-image: url(../images/png/eggs.png);
-        background-position: right bottom;
-    }
-    .footer__links {
-        gap: 30px;
-    }
-    .footer__subscribe {
-        max-width: 450px;
-    }
-    .wrapper,
-    .footer {
-        padding: 0px 32px;
-    }
-    .page__button {
-        padding-top: 12px;
-    }
-    .page__button {
-        min-height: 140px;
-    }
-    .page__cards {
-        row-gap: 24px;
-        -webkit-column-gap: 2.5%;
-           -moz-column-gap: 2.5%;
-                column-gap: 2.5%;
-    }
-    .cardssecond__link {
-        width: 31.666%;
-    }
-    .cardsfist__link {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 48.75%;
-                flex: 0 1 48.75%;
-    }
-    .aside__list {
-        gap: 24px;
-    }
-    .aside {
-        max-width: 23.125%;
-    }
-    .item-one {
-        max-height: 495px;
-        padding: 24px 20px;
-    }
-    .item-two {
-        min-height: 530px;
-    }
-    .item-three {
-        min-height: 292px;
-    }
-    .item-two__info {
-        max-width: 85.586%;
-    }
-    .aside__img-blotbig,
-    .infoblock-two__tagspanel,
-    .responds-problem,
-    .responds-problem__img-three,
-    .page-two__list-block-two {
-        display: none;
-    }
-    .page-two__hero-img {
-        min-width: 100%;
-        background-image: url(../images/png/1024px/girl-in-the-water-2_1024.png);
-        background-size: cover;
-        background-position: right;
-    }
-    .page-two__hero {
-        max-width: 714px;
-    }
-    .page-two__list {
-        gap: 8px;
-    }
-    .hero__title-h2 {
-        margin: 24px 0;
-    }
-    .wrap-five__item-img-one {
-        background-image: url(../images/png/1024px/chair_1024.png);
-    }
-    .wrap-five__item-img-two {
-        background-image: url(../images/png/1024px/rescuer_1024.png);
-    }
-}
-
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .breadcrumbs {
-        padding-top: 16px 0px 0px;
-    }
-    .cardsfist__image-one {
-        background-image: url(../images/png/1024px/eggs_1024.png);
-    }
-    .cardsfist__image-two {
-        background-image: url(../images/png/1024px/run_1024.png);
-    }
-    .cardssecond__image {
-        background-image: url(../images/png/1024px/girl-on-the-bed_1024.png);
-        min-height: 206px;
-    }
-    .cardssecond__two-image {
-        background-image: url(../images/png/1024px/girl-in-the-water_1024.png);
-        min-height: 206px;
-    }
-    .cardssecond-three__image {
-        background-image: url(../images/png/1024px/sign-in-hands_1024.png);
-        min-height: 206px;
-    }
-    .cardthird-one__image {
-        background-image: url(../images/png/1024px/woman-at-the-table_1024.png);
-        min-height: 206px;
-    }
-    .cardthird__two-image {
-        background-image: url(../images/png/1024px/woman-laptop-bed_1024.png);
-        min-height: 206px;
-    }
-    .cardthird-three__image {
-        background-image: url(../images/png/1024px/2-men_1024.png);
-        min-height: 206px;
-    }
-    .cardssecond__body {
-        min-height: 253px;
-    }
-}
-
-
-@media screen and (min-width: 450px) and (max-width: 1120px) {
-    .main__page  {
-        padding-top: 15px;
-    }
-    .header__wrap {
-        gap: 32px;
-        margin-right: 20px;
-    }
-    .header__list {
-        gap: 16px;
-    } 
-}
-
-@media screen and (max-width: 1090px) {
-    .item-four {
-        min-height: 240px;
-        padding: 24px;
-        background-image: url(../images/png/1024px/present-box_1024.png);
-    }
-    .item-three__link {
-        background-image: url(../images/png/1024px/present_1024.png);
-        background-size: cover;
-    }
-}
-
-@media screen and (max-width: 1020px)  {
-    .cardsfist__image-one {
-        background-image: url(../images/png/768px/eggs_768.png);
-        min-height: 404px;
-    }
-    .cardsfist__image-two {
-        background-image: url(../images/png/768px/run_768.png);
-        min-height: 404px;
-    }
-    .cardssecond__image {
-        background-image: url(../images/png/768px/girl-on-the-bed_768.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardssecond__two-image {
-        background-image: url(../images/png/768px/girl-in-the-water_768.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardssecond-three__image {
-        background-image: url(../images/png/768px/sign-in-hands_768.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardthird-one__image {
-        background-image: url(../images/png/768px/woman-at-the-table_768.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardthird__two-image {
-        background-image: url(../images/png/768px/woman-laptop-bed_768.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardthird-three__image {
-        background-image: url(../images/png/768px/2-men_768.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardsfist__body {
-        min-height: 196px;
-    }
-    .cardssecond__body {
-        min-height: 241px;
-    }
-    .page__button {
-        padding-top: 10px;
-    }
-    .page__button {
-        min-height: 113px;
-    }
-    .page__cards {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        row-gap: 24px;
-        -webkit-column-gap: 3.296%;
-           -moz-column-gap: 3.296%;
-                column-gap: 3.296%;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    }
-    .cardssecond__link {
-        width: 48.351%;
-    }
-    .cardsfist__link {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 100%;
-                flex: 0 1 100%;
-    }
-    .page-two__container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        gap: 23px;
-    }
-    .page-two__hero {
-        max-width: 728px;
-    }
-    .page-two__list {
-        margin-bottom: 8px;
-    }
-    .wrap-five__item-img-one {
-        background-image: url(../images/png/768px/chair_768.png);
-    }
-    .wrap-five__item-img-two {
-        background-image: url(../images/png/768px/rescuer_768.png);
-    }
-    .aside {
-        max-width: 100%;
-    }
-    .aside__list {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        max-width: 100%;
-        row-gap: 32px;
-        -webkit-column-gap: 16px;
-           -moz-column-gap: 16px;
-                column-gap: 16px;
-    }
-    .item-one {
-        max-height: 481px;
-        max-width: 355px;
-    }
-    .item-two {
-        min-height: 481px;
-        min-width: 356px;
-        padding: 24px;
-    }
-    .item-three {
-        min-width: 356px;
-        min-height: 248px;
-    }
-    .item-four {
-        max-width: 356px;
-        max-height: 248px;
-        padding: 24px 20px 17px 20px;
-        background-image: url(../images/png/768px/present-box_768.png);
-        background-position: -5px bottom;
-    }
-    .item-one__wrap-box {
-        min-height: 206px;
-        background-image: url(../images/png/768px/family_768.png);
-    }
-    .item-one__text {
-        gap: 11px;
-    }
-    .item-two__info {
-        min-width: 250px;
-    }
-    .item-three__link {
-        background-image: url(../images/png/768px/present_768.png);
-        background-position: center;
-        min-height: 248px;
-    }
-    .aside__btn-wrap {
-        width: 34.394%;
-    }
-    .item-four__wrap {
-        max-width: 82.022%;
-    }
-    .main__page-wrap {
-        padding-bottom: 59px;
-    }
-}
-
-@media screen and (min-width: 1001px)  {
-    .burger-menu {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1000px)  {
-    .header__button,
-    .header__list {
-        display: none;
-    } 
-    .footer__columns {
-    row-gap: 26px;
-    -webkit-column-gap: 31px;
-       -moz-column-gap: 31px;
-            column-gap: 31px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack:start;
-        -ms-flex-pack:start;
-            justify-content:flex-start;
-    }
-    .footer__rectangle {
-        margin-top: 26px;
-    }
-    .footer__wrapper {
-        padding: 35px 0 23px 0;
-    }
-    .wrapper,
-    .footer {
-        padding: 0px 20px;
-    }
-}
-
-@media screen and (min-width: 450px) and (max-width: 768px) {
-    .page-two__hero-img {
-        margin: 24px 0px 12px 0px;
-    }
-}
-
-@media screen and (min-width: 350px) and (max-width: 768px) {
-    .breadcrumbs {
-        padding: 16px 0px 0px 5px;
-    }
-    .wrapper,
-    .footer {
-        padding: 0px 20px;
-    }
-}
-
-@media screen and (min-width: 768px)  {
-    .infoblock-two__img-woman-two,
-    .infoblock-tree__img-two,
-    .infoblock-one__figure-img-two {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px)  {
-    .footer__links {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-item-align: stretch;
-            -ms-grid-row-align: stretch;
-            align-self: stretch;
-        width: 100%;
-    }
-    .footer__subscribe {
-        max-width: 375px;
-    }
-    .page__button {
-        padding-top: 5px;
-    }
-    .page__button {
-        min-height: 112px;
-    }
-    .page-two__container {
-        max-width: 90.338%;
-    }
-    .breadcrumbs {
-        padding: 12px 0px 0px 0px;
-    }
-    .infoblock-two__wrap-one {
-        padding: 24px 0 0 0;
-    }
-    .infoblock-two__wrap-two {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        gap: 16px;
-    }
-    .infoblock-two__img-woman-one,
-    .infoblock-tree__img-one,
-    .infoblock-one__figure-img-one {
-        display: none;
-    }
-    .infoblock-two__wrap-two p {
-        min-height: -webkit-fit-content;
-        min-height: -moz-fit-content;
-        min-height: fit-content
-    }
-    .infoblock-two__wrap-three,
-    .infoblock-two__wrap-six {
-        padding: 16px;
-    }
-    .infoblock-tree {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .infoblock-two__wrap-four {
-        max-width: 100%;
-        padding: 16px;
-    }
-    .wrap-five {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .wrap-five__item-img-one {
-        background-image: url(../images/png/414px/chair_414.png);
-        background-size: cover;
-        background-position: center;
-    }
-    .wrap-five__item-img-two {
-        background-image: url(../images/png/414px/rescuer_414.png);
-        background-size: cover;
-        background-position: center;
-    }
-    .wrap-five__item {
-        gap: 16px;
-    }
-    .page-two__container {
-        gap: 56px;
-    }
-    .aside__list {
-        gap: 24px;
-    }
-    .item-one {
-        min-height: 512px;
-        max-width: 100%;
-        padding: 24px 32px 44px 32px;
-    }
-    .item-two {
-        min-height: 433px;
-        min-width: 100%;
-    }
-    .item-three__link {
-        background-image: url(../images/png/414px/present_414.png);
-        background-position: center;
-        min-height: 292px;
-    }
-    .item-three {
-        min-width: 100%;
-    }
-    .item-four {
-        min-width: 100%;
-        padding: 24px;
-        background-image: url(../images/png/414px/present-box_414.png);
-    }
-    }
-    .item-four__wrap {
-        max-width: 100%;
-    }
-    .main__page-wrap {
-        padding-bottom: 127px;
-    }
-
-@media screen and (max-width: 670px)  {
-    .page__cards {
-        gap: 16px;
-    }
-    .cardssecond__link {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 100%;
-                flex: 0 1 100%;
-    }
-    .cardsfist__link {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 100%;
-                flex: 0 1 100%;
-    }
-    .cardssecond__link:nth-child(n+3) {
-        display: none;
-    }
-    .cardsfist__image-one {
-        background-image: url(../images/png/414px/eggs_414.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardsfist__body,
-    .cardssecond__body {
-        min-height: 260px;
-    }
-    .cardsfist__image-two {
-        background-image: url(../images/png/414px/run_414.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardssecond__image {
-        background-image: url(../images/png/414px/girl-on-the-bed_414.png);
-        min-height: 206px;
-        background-size: cover;
-    }
-    .cardssecond__two-image {
-        background-image: url(../images/png/414px/girl-in-the-water_414.png);
-        min-height: 206px;
-        background-size: cover;
-    }
-    .page-two__title {
-        font-size: 32px;
-        line-height: 125%;
-    }
-    .page-two__author-date {
-        margin-top: 8px;
-    }
-    .page-two__hero-img {
-        margin: 16px 0px 24px 0px;
-    }
-}
-
-
-@media screen and (max-width: 450px)  {
-    .header__logo {
-        height: 34px;
-        width: 48px;
-    }
-    .wrapper,
-    .footer {
-        padding: 0px 16px;
-    }
-    .footer__columns {
-        row-gap: 23px;
-    }
-    .social-links {
-        gap: 20px;
-    }
-    .footer__subscribe-wrap {
-        width: 100%;
-    }
-    .footer__wrapper {
-        padding: 35px 0 37px 0;
-    }
-    .footer__info {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        gap: 20px;
-    }
-    .footer__rectangle {
-        margin: 20px 0px;
-    }
-    .main__page-wrap {
-        padding-top: 32px;
-    }
-    .page-two__container {
-        max-width: 374px;
-    }
-    .page-two__hero-img {
-        min-width: 100%;
-        background-image: url(../images/png/414px/girl-in-the-water-2_414.png);
-        background-size: cover;
-        background-position: right;
-    }
-    .page-two__title {
-        max-width: 100%;
-    }
-    .page-two__list {
-        margin-bottom: 0;
-        min-width: 100%;
-    }
-}
-
-@media screen and (min-width: 350px) and (max-width: 450px) {
-    .header__container {
-        min-height: 72px;
-    }
-    .wrapper {
-        padding: 0px 20px;
-    }
-    .footer {
-        padding: 0px 20px 0px 19px;
-    }
-    .page__tagspanel { 
-        margin-top: 1px;
-    }
-    .page__container {
-        gap: 16px;
-    }
-    .page__tagspanel {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-    .tagspanel__item,
-    .tagspanel__item-self {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
-    }
-    .footer__columns {
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-    }
-    .page__title {
-        font-size: 32px;
-        line-height: 125%;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .footer__links {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    .footer__links {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        width: 100%;
-        gap: auto;
-    }
-    .footer__subscrib-desc2 {
-        max-width: 288px;
-    }
-    .footer__button {
-        display: none;
-    }
-    .footer__subscribe {
-        max-width: 100%;
-    }
-    .wrapper, .footer {
-        padding: 0px 14px 0px 18px;
-    }
-    .cardsfist__image-one {
-        background-image: url(../images/png/320px/eggs_320.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardsfist__body,
-    .cardssecond__body {
-        min-height: 272px;
-    }
-    .cardsfist__image-two {
-        background-image: url(../images/png/320px/run_320.png);
-        background-size: cover;
-        min-height: 206px;
-    }
-    .cardssecond__image {
-        background-image: url(../images/png/320px/girl-on-the-bed_320.png);
-        min-height: 206px;
-        background-size: cover;
-    }
-    .cardssecond__two-image {
-        background-image: url(../images/png/320px/girl-in-the-water_320.png);
-        min-height: 206px;
-        background-size: cover;
-    }
-    .page-two__title {
-        font-size: 24px;
-        line-height: 133.333%;
-    }
-    .page-two__hero-img {
-        margin: 16px 0px;
-    }
-    .item-four {
-        padding: 16px;
-    }
-    .item-four {
-        max-width: 100%;
-        max-height: 252px;
-    }
-    .item-two {
-        max-width: 100%;
-        min-height: 481px;
-    }
-    .main__page-wrap {
-        padding-bottom: 60px;
-    }
-    .page-two__container {
-        gap: 16px;
-    }
-    .infoblock-two {
-        gap: 16px;
-    }
-    .wrap-five__item {
-        gap: 8px;
-    }
-    .infoblock-tree__img-two,
-    .infoblock-two__img-woman-two,
-    .infoblock-one__figure-img-two {
-        max-width: 100%;
-    }
-    .infoblock-tree {
-        gap: 16px;
-    }
-    .infoblock-one {
-        gap: 8px;
-    }
-    .infoblock-two__wrap-one {
-        padding: 0;
-    }
-    .infoblock-one__figure {
-        margin: 16px 0px;
-    }
-    .hero__quote {
-        padding: 16px;
-        margin-bottom: 16px;
-    }
-    .hero__title-h2 {
-        margin: 16px 0 40px 0;
-    }
-    .page-two__content {
-        gap: 8px;
-    }
-}
-
-@media screen and (max-width: 349px) {
-    .header__container {
-        min-height: 56px;
-    }
-    .wrapper {
-        padding: 0px 16px 0px 16px;
-    }
-    .menu-btn {
-        top: 14.28%;
-    }
-    .breadcrumbs {
-        padding-top: 16px;
-    }
-    .page__tagspanel { 
-        margin-top: 1px;
-    }
-    .page__container {
-        gap: 16px;
-    }
-    .page__tagspanel {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-    .tagspanel__item,
-    .tagspanel__item-self {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
-    }
-    .page__title {
-        margin: 0px;
-        color: var(--text-primary, #333);
-        font-family: "Montserrat-Bold", sans-serif;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 133.333%;
-    }
-}
