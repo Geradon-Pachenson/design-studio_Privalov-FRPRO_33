@@ -107,7 +107,14 @@
             </section>   
             <section class="main__online-control online-control">
                 <div class="online-control__wrap">
-                    <img class="online-control__camera-img" src="images/jpeg/online_camera.jpg" at="Видеокамера">
+                    <div class="online-control__container">
+                        <h2>online control</h2>
+                        <div class="online-control__camera">
+                            <div class="online-control__rectangle"></div>
+                            <img class="online-control__camera-img" src="images/svg/camera.svg" at="Видеокамера">
+                            <div class="online-control__rectangle"></div>
+                        </div>
+                    </div>
                     <img class="online-control__picture-img" src="images/jpeg/online__control.jpg" at="Видеоконтроль ремонта помещения">
                     <hr class="online-control__dividing-line">
                     <div class="online-control__text">
@@ -138,8 +145,73 @@
                         
                     </div>
                     <div class="online-control__data-checkbox">
-                        <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
-                        <a href="ссылка на страницу согласия">I agree to the processing of personal data.</a>
+                        <input type="checkbox" class="custom-checkbox" id="checkbox" name="politics" value="">
+                        <label for="checkbox">I agree to the processing of personal data.</label>
+                    </div>
+                </div>
+            </section>
+            <section class="main__types-of-repair types-of-repair">
+                <div class="types-of-repair__wrap">
+                    <div class="types-of-repair__header">
+                        <h2>types of repair</h2>
+                        <img src="images/svg/types-of-repair.svg" alt="Виды ремонта">
+                    </div>
+                    <ul class="types-of-repair__list">
+                        <li class="types-of-repair__item">
+                            <div class="types-of-repair__item-img item-img__redecorating"></div>
+                            <div class="types-of-repair__item-text">
+                                <h3>Redecorating</h3>
+                                <ul class="types-of-repair__sublist">
+                                    <li>• Dismantling of old coatings</li>
+                                    <li>• Wallpapering </li>
+                                    <li>• Painting walls and ceilings</li>
+                                    <li>• Laying flooring</li>
+                                    <li>• Replacing plumbing</li>
+                                    <li>• Replacing sockets and switches</li>
+                                    <li>• Replacing doors</li>
+                                </ul>
+                                <button type="button" class="types-of-repair__btn button">
+                                from 900 rub / m2
+                                </button>
+                            </div>
+                        </li>
+                        <li class="types-of-repair__item">
+                            <div class="types-of-repair__item-img item-img__overhaul"></div>
+                            <div class="types-of-repair__item-text">
+                                <h3>Overhaul</h3>
+                                <ul class="types-of-repair__sublist">
+                                    <li>• Dismantling of old coatings</li>
+                                    <li>• Wallpapering </li>
+                                    <li>• Painting walls and ceilings</li>
+                                    <li>• Laying flooring</li>
+                                    <li>• Replacing plumbing</li>
+                                    <li>• Replacing sockets and switches</li>
+                                    <li>• Replacing doors</li>
+                                </ul>
+                                <button type="button" class="types-of-repair__btn button">
+                                from 1800 rub / m2
+                                </button>
+                            </div>
+                        </li>
+                        <li class="types-of-repair__item">
+                            <div class="types-of-repair__item-img item-img__designer-repair"></div>
+                            <div class="types-of-repair__item-text">
+                                <h3>Designer Repair</h3>
+                                <ul class="types-of-repair__sublist">
+                                    <li>• Dismantling of old coatings</li>
+                                    <li>• Wallpapering </li>
+                                    <li>• Painting walls and ceilings</li>
+                                    <li>• Laying flooring</li>
+                                    <li>• Replacing plumbing</li>
+                                    <li>• Replacing sockets and switches</li>
+                                    <li>• Replacing doors</li>
+                                </ul>
+                                <button type="button" class="types-of-repair__btn button">
+                                from 4000 rub / m2
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
                     </div>
                 </div>
             </section> 

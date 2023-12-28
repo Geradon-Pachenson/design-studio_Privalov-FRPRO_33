@@ -2,6 +2,7 @@
 @import url("font.css");
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -349,6 +350,8 @@ a, button {
     max-width: 100%;
 }
 
+/*-------------------------------------------------section online-control----------------------------------------------------*/
+
 .online-control__wrap {
     display: flex;
     flex-direction: column;
@@ -378,6 +381,40 @@ a, button {
     text-align: center;
     font-size: 18px;
     line-height: 204.6%; /* 36.828px */
+}
+
+.online-control__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12.79px;
+}
+
+.online-control__container h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: "YesevaOne-Regular", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%; /* 27.72px */
+    text-transform: uppercase;
+}
+
+.online-control__camera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9.47px;
+}
+
+.online-control__rectangle {
+    width: 32px;
+    height: 1.543px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #E3B873;
 }
 
 .online-control__camera-img {
@@ -433,11 +470,251 @@ a, button {
     line-height: 163.68%; /* 21.278px */
     flex-shrink: 0;
 }
+
+.online-control__form:nth-child(even) {
+    padding-left: 8.99px;
+}
+
+/*--------------------------------------------checkbox--------------------------------------------*/
+
 .online-control__data-checkbox {
     display: flex;
     justify-content: center;
     padding-top: 6.03px;
 }
+
+.online-control__data-checkbox label {
+    max-height: 18px;
+    color: #181818;
+    font-size: 14px;
+    line-height: 163.68%; /* 22.915px */
+    flex-shrink: 0;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: self-start;
+    user-select: none;
+}
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #E3B873;
+    border-radius: 2px;
+    margin-right: 8.62px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.custom-checkbox:checked+label::before {
+    border-color: #E3B873;
+    background-color: #E3B873;
+    background-image: url(../images/svg/checkbox.svg);
+}
+
+/*----------------------------------------section types-of-repair------------------------------------------------*/
+
+.types-of-repair__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1256px;
+    gap: 31px;
+    margin: 0 auto;
+    padding: 0;
+}
+.types-of-repair__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 148px;
+    gap: 13px;
+}
+
+.types-of-repair__wrap img {
+    max-width: 114px;
+    max-height: 28px;
+}
+
+.types-of-repair__wrap h2 {
+    color: #181818;
+    text-align: center;
+    font-family: "YesevaOne-Regular", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%; /* 27.72px */
+    text-transform: uppercase;
+}
+
+.types-of-repair__list {
+    display: flex;
+    gap: 30px;
+}
+
+.types-of-repair__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31.210%;
+    
+}
+
+.types-of-repair__item-img {
+    min-width: 392px;
+    min-height: 421px;
+    flex-shrink: 0;
+}
+
+.item-img__redecorating {
+    background-image: url(../images/jpeg/redecorating.jpg);
+}
+
+.item-img__overhaul {
+    background-image: url(../images/jpeg/overhaul.jpg);
+}
+
+.item-img__designer-repair {
+    background-image: url(../images/jpeg/designer-repair.jpg);
+}
+
+.types-of-repair__item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 84.183%;
+    min-height: 286px;
+    margin-top: -98px;
+    padding: 25px 0 0 0;
+    background: #FFF;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.types-of-repair__item-text h3 {
+    flex-shrink: 0;
+    color: #363636;
+    font-family: "YesevaOne-Regular", serif;
+    font-size: 18px;
+    line-height: 138.6%; /* 24.948px */
+    padding-left: 34px;
+}
+
+.types-of-repair__sublist {
+    padding-left: 34px;
+    color: #959595;
+    font-size: 13px;
+    line-height: 204.6%; /* 26.598px */
+}
+
+.types-of-repair__btn {
+    max-width: 228px;
+    min-height: 54px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    padding: 0;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.30);
+    border: none;
+    color: #FFF;
+    font-family: "YesevaOne-Regular", serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 138.6%; /* 24.948px */
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
