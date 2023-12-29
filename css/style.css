@@ -633,15 +633,140 @@ a, button {
     text-transform: uppercase;
 }
 
+/*----------------------------------------section call-the-measurer------------------------------------------------*/
 
+.call-the-measurer__wrap {
+    display: flex;
+    max-width: 1440px ;
+    justify-content: space-between;
+    margin-top: 124px;
+    background-image: url(../images/jpeg/building.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% bottom;
+}
 
+.call-the-measurer__info {
+    display: flex;
+    flex-direction: column;
+    margin: 117.14px 0 0 17.29%;
+    gap: 86.03px;
+    max-width: 375px;
+}
 
+.call-the-measurer__info-item {
+    display: flex;
+    max-width: 374.807px;
+    gap: 10.76px;
+}
 
+.call-the-measurer__info-par {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 57.757px;
+    min-height: 57.757px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 8px solid #FFF;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.15);
+}
 
+.call-the-measurer__info-par span {
+    color: #FFF;
+    text-align: center;
+    font-family: "YesevaOne-Regular", serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 138.6%; /* 24.948px */
+}
 
+.call-the-measurer__info-item p {
+    color: #363636;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
+.call-the-measurer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 38.44px;
+}
 
+.call-the-measurer__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    min-width: 506px;
+    min-height: 509px;
+    margin: 100px 100px 0 0;
+    flex-shrink: 0;
+    background: #131313;
+    box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
+}
 
+.call-the-measurer__info-item:last-child {
+    max-width: 253px;
+}
+
+.call-the-measurer__data h3 {
+    padding: 0 13px;
+    margin-top: 28px;
+    max-width: 297px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 143.22%; /* 25.78px */
+}
+
+.online-control__btn {
+    min-width: 200px;
+    min-height: 51px;
+    flex-shrink: 0;
+    border: #E3B873;
+}
+
+.call-the-measurer__label {
+    display: flex;
+    flex-direction: column;
+    gap: 6.97px;
+    max-width: 231px;
+    background-color: transparent;
+    color: #363636;
+    line-height: 163.68%; /* 22.915px */
+}
+
+.online-control__label span {
+    max-height: 12px;
+    color: rgba(54, 54, 54, 0.50);
+    font-size: 13px;
+    line-height: 163.68%; /* 21.278px */
+    transform: rotate(-0.068deg);
+    flex-shrink: 0;
+}
+
+.online-control__label input {
+    max-height: 17px;
+    border: none;
+    color: #363636;
+    font-size: 14px;
+    line-height: 163.68%; /* 21.278px */
+    flex-shrink: 0;
+}
+
+.call-the-measurer__btn {
+    min-width: 213px;
+    min-height: 51px;
+    border: none;
+    font-family: "NunitoSans-Regular", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 163.68%; /* 21.278px */
+    text-transform: uppercase;
+}
 
 
 
