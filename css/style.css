@@ -389,6 +389,27 @@ a, button {
     gap: 9.47px;
 }
 
+.online-control__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 817px;
+    min-height: 434px;
+    background-image: url(../images/jpeg/online__control.jpg);
+    position: relative;
+}
+
+.online-control__picture::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.80);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 .online-control__rectangle {
     width: 32px;
     height: 1.543px;
@@ -407,6 +428,7 @@ a, button {
     max-width: 817px;
     max-height: 434px;
     flex-shrink: 0;
+    z-index: 1;
 }
 
 .online-control__data-input {
@@ -908,9 +930,14 @@ margin-top: 1.83px;
 
 /*---------------------------------------------------------------section clients-------------------------------------------------------------------------*/
 
+.clients {
+    margin-top: 110.47px;
+}
+
 .clients__wrap {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 1440px ;
     margin: 0 auto;
     gap: 13.22px;
@@ -919,21 +946,81 @@ margin-top: 1.83px;
 
 .clients-reviews {
     display: flex;
+    justify-content: center;
     gap: 54px;
+    max-width: 85.833%;
 }
 
 .clients-reviews-container {
-    max-width: 26.111%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 30.420%;
+    padding: 24px 31.92px 0 20px;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
 }
 
+.clients__wrap h2 {
+    color: #181818;
+    text-align: center;
+    font-family: "YesevaOne-Regular", serif;
+    font-size: 20px;
+    line-height: 138.6%; /* 27.72px */
+    text-transform: uppercase;
+}
 
+.clients__wrap p {
+    margin-bottom: 25.78px;
+    color: #363636;
+    text-align: center;
+    font-size: 18px;
+    line-height: 163.68%; /* 29.462px */
+}
 
+.clients__wrap-img {
+    max-width: 114px;
+    max-height: 27.62px;
+    margin-bottom: 10.94px;
+    flex-shrink: 0;
+}
 
+.clients-reviews__header {
+    display: flex;
+    align-items: center;
+    
+    gap: 23px;
+}
 
+.clients-reviews__header img {
+    min-width: 76px;
+    min-height: 76px;
+}
 
+.clients-reviews__header h3 {
+    max-width: 178px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: "YesevaOne-Regular", serif;
+    font-size: 18px;
+    line-height: 127.05%; /* 22.869px */
+}
 
+.clients-reviews__text span {
+    max-width: 324.079px;
+    color: #959595;
+    font-size: 13px;
+    text-align: start;
+    line-height: 180%; /* 23.4px */
+}
 
-
+.clients-reviews__sign {
+    display: block;
+    max-width: 293.753px;
+    max-height: 54.035px;
+    flex-shrink: 0;
+    margin: 62.982px 0 -27.017px 0;
+}
 
 
 
