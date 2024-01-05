@@ -369,52 +369,45 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-        
-             
-                <div class="container types-wrapper clients-fon2"></div>         
-            </div>                            
-        </section>
-        <section class="map margin-left">
-            <div class="map-wrapper container">
-                <div class="map-form">
-                    <h2 class="map-title">have any questions?</h2>
-                    <div class="map-inputs_with_text margin-left-right min-width">
-                        <div class="border-bottom-input min-width231">
-                            <p class="map-input-suptitle">Name</p>
-                            <input type="text" name="map-name" value="What is your name:" class="map-input">
-                        </div>
-                        <div class="border-bottom-input min-width231">
-                            <p class="map-input-suptitle">Phone</p>
-                            <input type="tel" name="map-phone" value="Your phone number:" class="map-input">
-                        </div>
-                    </div>
-                    <div class="border-bottom-input min-width">
-                            <p class="map-input-suptitle">Question</p>
-                            <input type="text" name="map-Question" value="I want to know:" class="map-input">
-                    </div>
-                    
-                        <label class="label">
-                            <input type="checkbox" class="checkbox" checked>
-                            <span class="fake"></span>
-                            <span class="menu-checkbox-text">I agree to the processing of personal data.</span>
+        <section class="main__feedback feedback">
+            <div class="call-the-measurer__data feedback__wrap">
+                <h3>have any questions?</h3>
+                <div class="feedback__data">
+                    <form class="call-the-measurer__form feedback__data-form">
+                        <label class="online-control__label call-the-measurer__label" for="name_measurer">
+                            <span>Name</span>
+                            <input type="text" id="name_measurer" placeholder="What is your name:">
                         </label>
-                    
-                    <button class="map-button margin-top37 margin-bottom35">Submit</button> 
+                    </form>
+                    <form class="call-the-measurer__form feedback__data-form">
+                        <label class="online-control__label call-the-measurer__label" for="phone__number-measurer">
+                            <span>Phone</span>
+                            <input type="text" id="phone__number-measurer" placeholder="Your phone number:">
+                        </label>
+                    </form>
                 </div>
-                <h1 class="map-title2">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
-                    Decorum Tel +7 (928) 768 32 29
-                </h1>               
-                <div class="flex margin-bottom50">
-                    <img src="img/convert.svg" alt="convert"><img src="img/foto.svg" alt="foto" class="margin-left10">
+                <form class="call-the-measurer__form feedback__form">
+                    <label class="online-control__label call-the-measurer__label" for="email">
+                        <span>Question</span>
+                        <input type="text" id="email" placeholder="I want to know:">
+                    </label>
+                </form>
+                <div class="call-the-measurer__checkbox feedback__checkbox">
+                    <input type="checkbox" class="custom-checkbox" id="feedback__checkbox" name="politics" value="">
+                    <label for="feedback__checkbox">I agree to the processing of personal data.</label>
                 </div>
-                <div class="map-img margin-bottom50">
-                    <img src="img/map.png" alt="map">
-                </div>
+                <button type="button" class="online-control__btn button">
+                    Submit
+                </button>
+            </div>
+        </section>
+        <section class="main__map map">
+            <div class="map__bilding">
+            </div>
+            <div class="map__wrap">
+                <h3>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h3>
+                <img class="map__icon" src="images/svg/map__icons.svg" alt="Иконки telegam и instagram">
+                <img class="map__img" src="images/jpeg/map.jpg" alt="Карта">
             </div>
         </section>
     </main>
