@@ -137,6 +137,10 @@ a, button {
     position: relative;
 }
 
+
+/*-----------------------------------------section main__presentation--------------------------------------------------------*/
+
+
 .main__presentation-btn-container {
     display: flex;
     gap: 42px;
@@ -147,7 +151,7 @@ a, button {
     min-height: 707px;
     max-width: 100%;
     background-image: url(../images/jpeg/background-of-the-first-section.jpg);
-    background-size: 100%; 
+    background-size: cover; 
     position: relative;
     z-index: -2;   
 }
@@ -218,6 +222,8 @@ a, button {
     border: 1px solid #FFF;
 }
 
+/*-----------------------------------------section completed-projects--------------------------------------------------------*/
+
 .completed-projects {
     display: flex;
     min-height: 1074px;
@@ -285,8 +291,9 @@ a, button {
     text-transform: uppercase;
 }
 
-.projects-info__column p {
+.projects-info span {
     font-size: 13px;
+    color: #FFF;
     line-height: 163.68%; /* 21.278px */
     max-width: 92px;
 }
@@ -322,15 +329,14 @@ a, button {
     padding-bottom: 6.68px;
 }
 
+/*-------------------------------------------------section online-control----------------------------------------------------*/
+
 .online-control {
     display: flex;
     margin-top: -324px;
-    min-height: 955px;
     flex-shrink: 0;
     max-width: 100%;
 }
-
-/*-------------------------------------------------section online-control----------------------------------------------------*/
 
 .online-control__wrap {
     display: flex;
@@ -344,18 +350,18 @@ a, button {
 }
 
 .online-control__dividing-line {
-    margin: 30.218px 0 3.25px 0;
+    margin: 30.29px 0 2.25px 0;
     width: 55px;
     height: 1.543px;
     flex-shrink: 0;
+    border: none;
     border-radius: 30px;
     background: #E3B873;
 }
 
 .online-control__text p {
     max-width: 681px;
-    max-height: 130.911px;
-    padding-bottom: 62.25px;
+    margin-bottom: 44.825px;
     flex-shrink: 0;
     color: #363636;
     text-align: center;
@@ -380,6 +386,7 @@ a, button {
     font-weight: 400;
     line-height: 138.6%; /* 27.72px */
     text-transform: uppercase;
+    max-height: 26px;
 }
 
 .online-control__camera {
@@ -444,6 +451,7 @@ a, button {
     min-height: 51px;
     flex-shrink: 0;
     border: #E3B873;
+
 }
 
 .online-control__label {
@@ -482,7 +490,7 @@ a, button {
 .online-control__data-checkbox {
     display: flex;
     justify-content: center;
-    padding-top: 6.03px;
+    padding-top: 2.03px;
 }
 
 .online-control__data-checkbox label {
@@ -562,6 +570,7 @@ a, button {
 
 .types-of-repair__list {
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -623,7 +632,7 @@ a, button {
     max-width: 228px;
     min-height: 54px;
     flex-shrink: 0;
-    margin-top: 10px;
+    margin: 10px 0 -27px 0;
     padding: 0;
     background: #E3B873;
     box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.30);
@@ -730,6 +739,8 @@ a, button {
     min-width: 200px;
     min-height: 51px;
     flex-shrink: 0;
+    font-family: "NunitoSans-Regular", sans-serif;
+    font-style: normal;
     border: #E3B873;
 }
 
@@ -749,15 +760,6 @@ a, button {
     font-size: 13px;
     line-height: 163.68%; /* 21.278px */
     transform: rotate(-0.068deg);
-    flex-shrink: 0;
-}
-
-.online-control__label input {
-    max-height: 17px;
-    border: none;
-    color: #363636;
-    font-size: 14px;
-    line-height: 163.68%; /* 21.278px */
     flex-shrink: 0;
 }
 
@@ -781,7 +783,7 @@ a, button {
 .call-the-measurer__form {
     display: flex;
     width: 80.632%;
-    height: 9.626%;
+    min-height: 50px;
     margin: 23px 0 9px 0;
     gap: 7px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
@@ -809,6 +811,12 @@ a, button {
     line-height: 163.68%; /* 22.915px */
     background-color: transparent;
 }
+
+input[type="black__text"]::-webkit-input-placeholder { color: #363636; }
+input[type="black__text"]::-moz-placeholder          { color: #363636; } /*Firefox 19+*/
+input[type="black__text"]:-moz-placeholder           { color: #363636; } /*Firefox 18-*/
+input[type="black__text"]:-ms-input-placeholder      { color: #363636; }
+
 
 ::-webkit-input-placeholder { color: #FFF; }
 ::-moz-placeholder          { color: #FFF; } /*Firefox 19+*/
@@ -846,7 +854,7 @@ a, button {
 .realize-fantasies__wrap {
     display: flex;
     max-width: 1440px ;
-    max-height: 864px;
+    min-height: 864px;
     margin: 0 auto;
     gap: 43px;
     margin-top: 242.09px;
@@ -870,8 +878,10 @@ a, button {
 .realize-fantasies__options {
     display: flex;
     flex-direction: column;
+    width: 19.722%;
+    height: 100%;
     gap: 47px;
-    margin: 137.47px 0 0 99px;
+    margin: 9.547% 0 0 6.875%;
 }
 
 .realize-fantasies__options h2 {
@@ -915,6 +925,7 @@ margin-top: 1.83px;
 .realize-fantasies__picture-one,
 .realize-fantasies__picture-two {
     display: flex;
+    width: 24.583%;
     flex-direction: column;
 }
 
@@ -1172,3 +1183,339 @@ margin-top: 1.83px;
 
 
 /*---------------------------------------- Адаптив---------------------------------------------- */
+
+@media screen and (max-width: 1300px)  {
+    .call-the-measurer,
+    .clients,
+    .footer {
+        display: none;
+    }
+/*-----------------------------------------Шапка--------------------------------------------------------*/
+    .header {
+    min-height: 57px;
+    }
+    .nav__container {
+        min-width: 100%;
+        padding: 0 18px;
+        justify-content: space-between;
+    }
+
+    .nav__logo {
+        min-width: auto;
+    }
+
+    .navigation__phone {
+        min-width: auto;
+    }
+
+    .header__button,
+    .navigation {
+        display: none;
+    }
+
+    .navigation__phone a {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+/*-----------------------------------------section main__presentation-----------------------------------*/
+
+    .main__presentation {
+        min-height: 476px;
+    }
+
+    .main__presentation-wrap {
+        gap: 16px;
+        padding: 85px 0 0 0;
+        min-width: 100%;
+    }
+
+    .main__presentation-title,
+    .main__presentation-text,
+    .main__presentation-btn-container {
+        max-width: 339px;
+    }
+
+    .main__presentation-title h1,
+    .main__presentation-title span {
+        font-size: 23px;
+    }
+
+    .main__presentation-text {
+        margin-bottom: 16px;
+    }
+
+    .main__presentation-text p {
+        font-size: 14px;
+        line-height: 135.84%; /* 19.018px */
+    }
+
+    .main__presentation-btn-container {
+        flex-direction: column;
+        gap: 26px;
+    }
+
+    .main__presentation-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0 18px;
+            margin: 0 auto;
+            gap: 16px;
+        }
+
+/*-----------------------------------------section completed-projects--------------------------------------------------------*/
+
+    .completed-projects {
+        min-height: fit-content;
+        background-color: #181818;
+    }
+
+    .completed-projects__wrap {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding: 0 18px;
+        gap: 76px;
+    }
+
+    .projects-info__img-control,
+    .projects-picture {
+        display: none;
+    }
+
+    .projects-info__mobile-img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 13px;
+        margin-top: 36px;
+        min-height: 241.355px;
+        width: 100%;
+        background-image: url(../images/jpeg/mobile-img-comleted-projects.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .projects-info {
+        align-items: center;
+        padding-top: 36px;
+        gap: 37px;
+    }
+
+    .projects-info h2 {
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: -1.54px;
+        max-width: 229px;
+    }
+
+    .projects-info p {
+        text-align: center;
+        font-size: 11px;
+        line-height: 158.48%; /* 17.433px */
+    }
+
+    .projects-info__column h3 {
+        font-size: 14px;
+    }
+
+    .projects-info__row {
+        align-self: start;
+        gap: 61px;
+    }
+
+    .projects-info__column {
+        align-items: start;
+        gap: 11px;
+    }
+
+    .projects-info__column span {
+        font-size: 11px;
+        line-height: 135.84%; /* 14.942px */
+    }
+
+/*-------------------------------------------------section online-control----------------------------------------------------*/
+
+    .online-control {
+        margin-top: 0;
+        padding-top: 58px;
+        background-color: #181818;
+    }
+
+    .online-control__container h2 {
+        font-size: 22px;
+    }
+
+    .online-control__container {
+        gap: 19.79px;
+    }
+
+    .online-control__wrap {
+        gap: 21.46px;
+        max-width: 100%;
+    }
+
+    .online-control__picture {
+        padding: 18.75px 0 6.54px 0;
+    }
+
+    .online-control__text p {
+        margin-bottom: 0;
+        color: #FFF;
+        font-size: 11px;
+        line-height: 169.8%; /* 18.678px */
+    }
+
+    .mobile-online-control__input,
+    .mobile-online-control__data-checkbox {
+            display: none;
+    }
+
+    .mobile-online-control__data-input {
+        gap: 26.54px;
+        min-width: 506px;
+        min-height: auto;
+        margin: 61.05px 0 0 0;
+        flex-shrink: 0;
+        background: #131313;
+        box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.05);
+        background-color: #181818;
+    }
+
+    .mobile-call-the-measurer__form {
+        width: 80.632%;
+        height: 9.626%;
+        margin: 0;
+        gap: 6.49px;
+        border-bottom: 1px solid #FFF;;
+    }
+
+    .mobile-call-the-measurer__form:nth-child(2) {
+        margin: 36.46px 0 35.89px 0;
+
+    }
+
+    .mobile-online-control__btn {
+        margin: 35.89px 0 -27px 0;
+        min-width: 340px;
+        font-family: "NunitoSans-Regular", sans-serif;
+        font-size: 13px;
+        font-style: normal;
+    }
+
+/*-------------------------------------------------section types-of-repair----------------------------------------------------*/
+
+    .types-of-repair__header {
+        margin-top: 83px;
+        gap: 17px;
+    }
+
+    .types-of-repair__wrap h2 {
+        font-size: 22px;
+    }
+
+    .types-of-repair__wrap {
+        gap: 40px;
+    }
+
+    .types-of-repair__list {
+        display: flex;
+        flex-direction: column;
+        gap: 79px;
+    }
+
+    .types-of-repair__item {
+        width: auto;
+    }
+
+    .types-of-repair__item-img {
+        min-width: 784px;
+        min-height: 842px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1301px)  {
+    .projects-info__mobile-img {
+        display: none;
+    }
+
+    .mobile-online-control__data-input {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 925px)  {
+    .types-of-repair__item-img {
+        min-width: 588px;
+        min-height: 631px;
+    }
+
+    .types-of-repair__item {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px)  {
+    .online-control__picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 90.666%;
+        min-height: 434px;
+    }
+
+    .online-control__text p {
+        padding: 0 18px;
+    }
+}
+
+@media screen and (max-width: 500px)  {
+    .mobile-online-control__data-input {
+        min-width: 100%;
+        padding: 0 18px;
+}
+}
+
+@media screen and (max-width: 450px)  {
+    .online-control__picture {
+        background-image: url(../images/jpeg/mobile_online__control.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 207px;
+    }
+
+    .mobile-online-control__btn {
+        min-width: 90.666%;
+    }
+
+    .online-control__picture::after {
+        display: none;
+    }
+
+    .online-control__picture-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 376px)  {
+    .main__presentation {
+        background-image: url(../images/jpeg/background-375-of-the-first-section.jpg);
+    }
+}

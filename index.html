@@ -37,7 +37,7 @@
             <div class="navigation__phone">
                 <a href="tel:+79287683239">+7 (928) 768-32-39</a>
             </div>
-            <button type="button" class="button">
+            <button type="button" class="button header__button">
                 REQUEST A CALL
             </button>
         </div>
@@ -45,19 +45,21 @@
     <main class="main">
         <section class="main__presentation">
             <div class="main__presentation-wrap">
-                <div class="main__presentation-title">
-                    <h1>Turnkey Repair in the city of <span>Rostov-on-Don</span></h1>
-                </div>
-                <div class="main__presentation-text">
-                    <p>Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
-                </div>
-                <div class="main__presentation-btn-container">
-                    <button type="button" class="main__presentation-btn-one button">
-                        CALCULATE THE COST
-                    </button>
-                    <button type="button" class="main__presentation-btn-two button">
-                        SUBMIT YOUR APPLICATION
-                    </button>
+                <div class="main__presentation-container">
+                    <div class="main__presentation-title">
+                        <h1>Turnkey Repair in the city of <span>Rostov-on-Don</span></h1>
+                    </div>
+                    <div class="main__presentation-text">
+                        <p>Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
+                    </div>
+                    <div class="main__presentation-btn-container">
+                        <button type="button" class="main__presentation-btn-one button">
+                            CALCULATE THE COST
+                        </button>
+                        <button type="button" class="main__presentation-btn-two button">
+                            SUBMIT YOUR APPLICATION
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -66,24 +68,28 @@
                 <div class="completed-projects__info projects-info">
                     <h2>Completed projects</h2> 
                     <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br>market we have made happy more than 1000 families</p>
+                    <div class="projects-info__mobile-img">
+                        <img class="projects-info__mobile-icn" src="images/svg/mobile-icon1.svg" alt="Навигационная стрелка">
+                        <img class="projects-info__mobile-icn" src="images/svg/mobile-icon2.svg" alt="Навигационная стрелка">
+                    </div>
                     <div class="projects-info__row">
                         <div class="projects-info__column">
                             <h3>City:</h3>
-                            <p>Rostov-on-Don LCD admiral</p>   
+                            <span>Rostov-on-Don LCD admiral</span>   
                         </div>
                         <div class="projects-info__column">
                             <h3>apartment area:</h3>
-                            <p>81 m2</p>   
+                            <span>81 m2</span>   
                         </div>
                     </div>
                     <div class="projects-info__row">
                         <div class="projects-info__column">
                             <h3>Repair time:</h3>
-                            <p>3.5 months</p>   
+                            <span>3.5 months</span>   
                         </div>
                         <div class="projects-info__column">
                             <h3>Repair Cost:</h3>
-                            <p>Upon request</p>   
+                            <span>Upon request</span>   
                         </div>
                     </div>
                     <img class="projects-info__img-control" src="images/svg/control.svg" alt="Элемент управления">
@@ -121,11 +127,11 @@
                 <div class="online-control__text">
                     <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.</p>
                 </div>
-                <div class="online-control__data-input">
+                <div class="online-control__data-input mobile-online-control__input">
                     <form class="online-control__form">
                         <label class="online-control__label" for="name">
                             <span>Name</span>
-                            <input type="text" id="name" placeholder="What is your name:">
+                            <input type="black__text" id="name" placeholder="What is your name:">
                             <svg xmlns="http://www.w3.org/2000/svg" width="231" height="2" viewBox="0 0 231 2" fill="none">
                                 <rect x="0.25" y="-0.25" width="230.5" height="0.5" transform="matrix(1 0 0 -1 0 1.41064)" stroke="#363636" stroke-opacity="0.3" stroke-width="0.5"/>
                             </svg>
@@ -134,7 +140,7 @@
                     <form class="online-control__form">
                         <label class="online-control__label" for="phone number">
                             <span>Phone</span>
-                            <input type="text" id="phone number" placeholder="Your phone number:">
+                            <input type="black__text" id="phone number" placeholder="Your phone number:">
                             <svg xmlns="http://www.w3.org/2000/svg" width="231" height="2" viewBox="0 0 231 2" fill="none">
                                 <rect x="0.25" y="-0.25" width="230.5" height="0.5" transform="matrix(1 0 0 -1 0 1.41064)" stroke="#363636" stroke-opacity="0.3" stroke-width="0.5"/>
                             </svg>
@@ -144,9 +150,30 @@
                         Submit
                     </button>
                 </div>
-                <div class="online-control__data-checkbox">
+                <div class="online-control__data-checkbox mobile-online-control__data-checkbox">
                     <input type="checkbox" class="custom-checkbox" id="checkbox" name="politics" value="">
                     <label for="checkbox">I agree to the processing of personal data.</label>
+                </div>
+                <div class="call-the-measurer__data mobile-online-control__data-input">
+                    <form class="online-control__form call-the-measurer__form mobile-call-the-measurer__form">
+                        <label class="online-control__label call-the-measurer__label" for="name-measurer">
+                            <span>Name</span>
+                            <input type="text" id="name-measurer" placeholder="What is your name:">
+                        </label>
+                    </form>
+                    <form class="online-control__form call-the-measurer__form mobile-call-the-measurer__form">
+                        <label class="online-control__label call-the-measurer__label" for="phone number-measurer">
+                            <span>Number</span>
+                            <input type="text" id="phone number-measurer" placeholder="Your phone number:">
+                        </label>
+                    </form>
+                    <div class="online-control__data-checkbox call-the-measurer__checkbox">
+                        <input type="checkbox" class="custom-checkbox" id="measurer__checkbox" name="politics" value="">
+                        <label for="measurer__checkbox">I agree to the processing of personal data.</label>
+                    </div>
+                    <button type="button" class="online-control__btn button button mobile-online-control__btn">
+                        Submit
+                    </button>
                 </div>
             </div>
         </section>
@@ -246,15 +273,15 @@
                     <div class="call-the-measurer__data">
                         <h3>Leave a request for free departure of the measurer</h3>
                         <form class="online-control__form call-the-measurer__form">
-                            <label class="online-control__label call-the-measurer__label" for="name-measurer">
+                            <label class="online-control__label call-the-measurer__label" for="name__measurer">
                                 <span>Name</span>
-                                <input type="text" id="name-measurer" placeholder="What is your name:">
+                                <input type="text" id="name__measurer" placeholder="What is your name:">
                             </label>
                         </form>
                         <form class="online-control__form call-the-measurer__form">
-                            <label class="online-control__label call-the-measurer__label" for="phone number-measurer">
+                            <label class="online-control__label call-the-measurer__label" for="phone__number-measurer">
                                 <span>Phone</span>
-                                <input type="text" id="phone number-measurer" placeholder="Your phone number:">
+                                <input type="text" id="phone__number-measurer" placeholder="Your phone number:">
                             </label>
                         </form>
                         <form class="online-control__form call-the-measurer__form">
@@ -264,7 +291,7 @@
                             </label>
                         </form>
                         <div class="online-control__data-checkbox call-the-measurer__checkbox">
-                            <input type="checkbox" class="custom-checkbox" id="measurer__checkbox" name="politics" value="">
+                            <input type="checkbox" class="custom-checkbox" id="measurer_checkbox" name="politics" value="">
                             <label for="measurer__checkbox">I agree to the processing of personal data.</label>
                         </div>
                         <button type="button" class="call-the-measurer__btn button">
@@ -380,9 +407,9 @@
                         </label>
                     </form>
                     <form class="call-the-measurer__form feedback__data-form">
-                        <label class="online-control__label call-the-measurer__label" for="phone__number-measurer">
+                        <label class="online-control__label call-the-measurer__label" for="phone_number-measurer">
                             <span>Phone</span>
-                            <input type="text" id="phone__number-measurer" placeholder="Your phone number:">
+                            <input type="text" id="phone_number-measurer" placeholder="Your phone number:">
                         </label>
                     </form>
                 </div>
